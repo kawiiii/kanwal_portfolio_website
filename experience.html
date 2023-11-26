@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanwal Mehreen - Experience</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+    <style>
+        /* Reset some default styles */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #111;
+            color: #fff;
+        }
+
+        .container {
+            width: 100%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: flex-start; /* Align content to the left */
+        }
+
+        .content {
+            width: 100%;
+        }
+
+        .experience {
+        font-size: 24px;
+        color: #4CAF50;
+        text-align: left;
+        margin-bottom: 15px}
+
+        .experience-heading {
+            font-size: 32px;
+            color: #4CAF50;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .timeline {
+            list-style: none;
+            padding: 0;
+            margin: 50px 0;
+        }
+
+        .entry {
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+            position: relative;
+            max-width: 90%; /* Adjust the width of the entry */
+        }
+
+        .circle {
+            width: 30px;
+            height: 30px;
+            background-color: #4CAF50;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            top: -15px;
+            left: -15px;
+            z-index: 1; /* Place the circle on top */
+        }
+
+        .circle::before {
+            content: '';
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: #111;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .entry-content {
+            max-width: 100%;
+            padding-left: 40px;
+            border-left: 2px solid #4CAF50;
+            position: relative;
+            z-index: 0; /* Ensure the content is below the circle */
+        }
+
+        .entry-content h4 {
+            margin-top: 0;
+        }
+
+        .role {
+            color: #8aff80;
+        }
+
+        /* Responsive adjustments */
+        @media screen and (max-width: 768px) {
+    .entry {
+        flex-direction: column;
+        align-items: flex-start;
+        max-width: 100%;
+    }
+
+    .entry-content {
+        padding-left: 40px; /* Restore padding for entry content */
+        margin-top: 20px;
+    }
+
+    .circle {
+        position: absolute;
+        top: -15px;
+        left: -15px;
+        z-index: 1; /* Keep the circle on top */
+    }
+
+    .circle::before {
+        display: none; /* Hide the connecting line in mobile view */
+    }
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <h2 class="experience-heading">Experience</h2>
+
+            <!-- Research Experience -->
+            <h3 class="experience">Research Experience</h3>
+            <ul class="timeline">
+                <li class="entry">
+                    <div class="circle"></div>
+                    <div class="entry-content">
+                        <p>Bukhari Lab - St. John’s University</p>
+                        <h4 class="role">Research Intern (Part-Time)</h4>
+                        <p>Actively involved in the research and practical implementation of knowledge graphs within the domain of medical coding with a primary focus on CPT (Current Procedural Terminology) coding procedures. Research areas include automated knowledge graphs using LLMs, Bioinformatics, Semantic Web and NLP, Explainability.</p>
+                    </div>
+                </li>
+
+                <li class="entry">
+                    <div class="circle"></div>
+                    <div class="entry-content">
+                        <p>TAI Lab - Toronto Metropolitan University</p>
+                        <h4 class="role">Research Intern (Full-Time)</h4>
+                        <p>Collaborated with a diverse research team spanning Hamilton Health Services, and institutions including UBC, McMaster, and TMU to predict emergency department visits using Graph Neural Networks (GNNs), enhancing healthcare planning and patient well-being. By combining data mining techniques with insights from medical literature, I extracted key features, enhancing the interpretability and clinical relevance of the predictive models. Additionally, I engineered baseline ML and DL models to establish performance benchmarks and facilitate meaningful comparisons.Overall, my contributions played a vital role in achieving the project's objectives and outcomes.</p>
+                    </div>
+                </li>
+
+                <li class="entry">
+                    <div class="circle"></div>
+                    <div class="entry-content">
+                        <p>CARES Research Lab - Texas A&M University</p>
+                        <h4 class="role">Research Intern (Part-Time)</h4>
+                        <p>During my involvement in the "Detection and Treatment Prediction of Alzheimer's Disease" project at CARES Research Lab, I conducted comprehensive literature reviews that clarified the knowledge landscape and informed the research hypotheses.Furthermore, I played a pivotal role in the collection and curation of essential datasets for the project.  </p>
+                    </div>
+                </li>
+
+                <li class="entry">
+                    <div class="circle"></div>
+                    <div class="entry-content">
+                        <p>IoT Lab - NUST H-12</p>
+                        <h4 class="role">Research Intern (Part-Time)</h4>
+                        <p>Significantly contributed to a nationwide IoT project by proposing a comprehensive solution that covered network topology, architecture, IoT data protocols, and more. Additionally, I performed an in-depth literature review on deep learning-based vehicle detection systems in foggy weather, specifically focusing on the use of LiDAR and RADAR signals. My findings informed the optimal solution presented for the project, ensuring its alignment with the latest research and industry practices.</p>
+                    </div>
+                </li>
+
+                
+            </ul>
+
+            <!-- Industrial Experience -->
+            <h3 class="experience">Industrial Experience</h3>
+            <ul class="timeline">
+
+                <li class="entry">
+                    <div class="circle"></div>
+                    <div class="entry-content">
+                        <p>KDNuggets</p>
+                        <h4 class="role">Technical Content Writer (Contract)</h4>
+                        <p> KDnuggets is recognized as the 2nd biggest data science and AI blog in the world. I write captivating articles on data science, machine learning, deep learning,LLMs and Python, engaging and educating readers. These articles have reached a substantial global audience, with views exceeding 1,000,000. With a focus on SEO best practices, I enhanced the platform's visibility and drove organic traffic. </p>
+                    </div>
+                </li>
+
+                <li class="entry">
+                    <div class="circle"></div>
+                    <div class="entry-content">
+                        <p>As-Siraat</p>
+                        <h4 class="role">Machine Learning Intern (Full-Time)</h4>
+                        <p>Developed a dynamic content-based recommendation engine that effectively matched industry needs with students' profiles, providing accurate and relevant suggestions for potential partnerships. To enhance the accessibility and usability of the recommendation system, I seamlessly integrated machine learning components with a user-friendly web interface. This integration enabled industry representatives and students to easily navigate and utilize the system, fostering efficient and meaningful collaborations.</p>
+                    </div>
+                </li>
+                
+                <li class="entry">
+                    <div class="circle"></div>
+                    <div class="entry-content">
+                        <p>ThinkSoft.io</p>
+                        <h4 class="role">Full-Stack Developer Intern (Part-Time)</h4>
+                        <p>Worked closely with senior developers and a product manager on a project called SuperLeader Web Application. This web-based app was designed to help newly established startups manage their day-to-day operations, conduct meetings, and track the progress of their projects. My tasks involved designing the frontend using React and seamlessly integrating it with the main codebase.</p>
+                    </div>
+                </li>
+                
+
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

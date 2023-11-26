@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanwal Mehreen - Portfolio</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="profile">
+                <!-- Your profile picture -->
+                <img src="images/Kanwal_Mehreen.png" alt="Kanwal Mehreen" class="profile-image">
+                <h1 class="name">Kanwal Mehreen</h1>
+            </div>
+            
+            <div class="tabs">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#publications">Publications</a></li>
+                    <li><a href="#extracurricular">Extra-Curricular</a></li>
+                    <li><a href="#achievements">Achievements</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="content">
+            <div id="home"> <!-- Add ID for each content section related to tabs -->
+                <!-- Home content -->
+                <!-- Placeholder content for Home -->
+                <h2>Welcome to My Portfolio!</h2>
+                <p>This is the home section.</p>
+            </div>
+            <div id="experience">
+                <!-- Experience content -->
+            </div>
+            <div id="publications">
+                <!-- Publications content -->
+            </div>
+            <div id="extracurricular">
+                <!-- Extracurricular content -->
+            </div>
+            <div id="achievements"> <!-- Content for Achievements tab -->
+                <!-- Achievements content will be loaded dynamically here -->
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // JavaScript for tab navigation and content loading
+        const tabs = document.querySelectorAll('.tabs ul li a');
+        const contentDiv = document.querySelector('.content');
+    
+        tabs.forEach(tab => {
+            tab.addEventListener('click', e => {
+                e.preventDefault();
+                const targetId = e.target.getAttribute('href').slice(1);
+                loadContent(targetId);
+            });
+        });
+
+        // Simulate click on Home tab to load home.html content by default
+        document.addEventListener('DOMContentLoaded', function() {
+            const homeTab = document.querySelector('.tabs ul li:first-child a');
+            homeTab.click();
+        });
+    
+        function loadContent(targetId) {
+            const url = targetId + '.html'; // Assuming separate HTML files have names like 'experience.html', 'publications.html', etc.
+            fetch(url)
+                .then(response => response.text())
+                .then(data => {
+                    contentDiv.innerHTML = data; // Insert fetched content into the content div
+                })
+                .catch(error => console.error('Error:', error));
+        }
+    </script>
+</body>
+</html>
