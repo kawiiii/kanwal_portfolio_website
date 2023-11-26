@@ -16,11 +16,29 @@ li {
 }
 
 .sidebar {
-    flex: 0 0 250px; /* Fixed width of 250px for the sidebar */
-    overflow-y: auto; /* Enable vertical scrolling for the sidebar content */
+    flex: 0 0 250px; 
+    overflow-y: auto; 
     background-color: #333;
     color: #fff;
     padding: 20px;
+}
+
+.my-links {
+    position: absolute;
+    bottom: 70px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.my-links a {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.my-links img {
+    width: 40px; /* Adjust as needed */
+    height: auto;
 }
 
 .profile {
@@ -85,6 +103,8 @@ li {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
 }
 
+/* Existing CSS */
+
 /* Media queries for responsive design */
 @media only screen and (max-width: 768px) {
     .container {
@@ -96,15 +116,32 @@ li {
         flex: 1 1 100%;
         min-width: auto;
     }
+
+    .my-links {
+        position: relative; /* Change from absolute to relative positioning */
+        bottom: auto;
+        width: 100%;
+        text-align: center;
+        margin-top: 20px; /* Adjust margin-top for spacing */
+    }
+
+    .my-links a {
+        margin: 0 5px;
+    }
+
+    .my-links img {
+        width: 40px; /* Adjust as needed */
+        height: auto;
+    }
 }
 
-
 @media only screen and (min-width: 769px) {
+    /* Existing styles for larger screens */
     .sidebar {
         position: fixed;
         top: 0;
         left: 0;
-        width: 25vw; /* Use 25% of the viewport width for the sidebar */
+        width: 25vw;
         height: 100vh;
         overflow-y: auto;
         background-color: #333;
@@ -114,7 +151,8 @@ li {
     }
 
     .content {
-        margin-left: 15vw; /* Adjust margin to avoid overlap with sidebar */
-        overflow-y: auto; /* Allow content scrolling if needed */
+        margin-left: 15vw;
+        overflow-y: auto;
     }
 }
+
