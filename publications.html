@@ -7,6 +7,12 @@
     <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
     <style>
 
+body {
+            font-family: Arial, sans-serif;
+            background-color: #111;
+            color: #fff;
+        }
+
         /* Custom styles for publications */
         .publication-heading {
             font-size: 32px;
@@ -22,7 +28,7 @@
         .publication {
             display: flex;
             align-items: flex-start;
-            margin-bottom: 20px;
+            margin-bottom: 5px;
             background-color: #222; /* Dark background color */
             padding: 20px;
             border-radius: 8px;
@@ -106,28 +112,77 @@
         font-size: 14px;
     }
 
-
-
-
-
     </style>
 </head>
 <body>
     <div class="container">
         <div class="content">
-            <h2 class="publication-heading">Publications</h2>
+            <h2 class="publication-heading">Publications (Papers,Books, and Blogs)</h2>
 
+            <h3>Papers</h3>
+
+            <div class="papers">
+ 
+                <!-- Paper 2 -->
+                <div class="publication">
+                    <div class="publication-details">
+                        <div class="publication-title">Augmenting Legal Decision Support Systems with LLM-based NLI for Analyzing Social Media Evidence</div>
+                        <div class="publication-authors">Authors: Ram Kadiyala, Siddartha Pullakhandam, Kanwal Mehreen*, Subhasya Tippareddy, Ashay Srivastava</div>
+                        <div class="publication-description">
+                            Venue: NLLI @EMNLP 2024 (Accepted)
+                        </div>
+                        <a href="https://www.arxiv.org/pdf/2410.15990" class="publication-link" target="_blank">ArXiv Pre-Print</a>
+                    </div>
+                </div>
+            
+                <!-- Paper 3 -->
+                <div class="publication">
+                    <div class="publication-details">
+                        <div class="publication-title">Devanagari Script Languages 2024: Detection of Language, Hate Speech, and Targets</div>
+                        <div class="publication-authors">Authors: Jebish Purbey, Siddartha Pullakhandam, Kanwal Mehreen*, Muhammad Arham, Drishti Sharma, Ashay Srivastava, Ram Kadiyala</div>
+                        <div class="publication-description">
+                            Venue: CHIPSAL @COLING 2025 (Under Review)
+                        </div>
+                        <a href="https://arxiv.org/abs/2411.06850" class="publication-link" target="_blank">ArXiv Pre-Print</a>
+                    </div>
+                </div>
+            
+                               <!-- Paper 1 -->
+                               <div class="publication">
+                                <div class="publication-details">
+                                    <div class="publication-title">iDentify: An Open-Source Tool for Automated Dental Anomaly Detection in Panoramic Radiographs</div>
+                                    <div class="publication-authors">Authors: Kanwal Mehreen*, Hassan Aqeel Khan</div>
+                                    <div class="publication-description">
+                                        Venue: SoftwareX Journal (Under Review)
+                                    </div>
+                                    <a href="https://github.com/kawiiii/iDentify" class="publication-link" target="_blank">Github</a>
+                                </div>
+                            </div>
+                        
+                <!-- Paper 4 -->
+                <div class="publication">
+                    <div class="publication-details">
+                        <div class="publication-title">Security Vulnerabilities in Big Data Systems: An Empirical Study Across 19 Platforms</div>
+                        <div class="publication-authors">Authors: Prajanya Gupta, Faheem Ullah, Kanwal Mehreen*, Jamal el Hachem, Mojtaba Shahin</div>
+                        <div class="publication-description">
+                            Venue: Journal of Network and Computer Applications (Under Review)
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h3>Books</h3>
             <div class="publications">
                 <!-- Publication 1 -->
                 <div class="publication">
                     <img src="images/stablediffusion.png" alt="Book Image">
                     <div class="publication-details">
-                        <div class="publication-title">Stable Diffusion (Ebook In Progress)</div>
+                        <div class="publication-title"> Mastering Digital Art with Stable Diffusion</div>
                         <div class="publication-authors">Authors: Kanwal Mehreen and Co-Authors</div>
                         <div class="publication-description">
-                            Description: This upcoming book will provide a comprehensive guide to understanding Stable Diffusion. It covers wide range of topics from technical introductions to hands-on use cases and example projects.
+                            Description: This book offers a comprehensive guide to mastering Stable Diffusion. It covers wide range of topics from technical introductions to hands-on use cases and example projects.
                         </div>
-                        <!-- <a href="#" class="publication-link">Read More</a> -->
+                        <a href="https://machinelearningmastery.com/mastering-digital-art-with-stable-diffusion/" class="publication-link " target="_blank">Read More</a>
                     </div>
                 </div>
 
@@ -143,12 +198,72 @@
                         <a href="https://machinelearningmastery.com/productivity-with-chatgpt/" class="publication-link " target="_blank">Read More</a>
                     </div>
                 </div>
+        <!-- Publication 3 -->
+        <div class="publication">
+            <img src="images/llmbook.png" alt="Book Image">
+            <div class="publication-details">
+                <div class="publication-title"> Build LLM Applications (from Scratch)</div>
+                <div class="publication-authors">Author:Hamza Farooq & Contributors (Kanwal Mehreen)</div>
+                <div class="publication-description">
+                    Description: Create your own LLM applications without using a framework like LlamaIndex or LangChain ...
+                </div>
+                <a href="https://www.manning.com/books/build-llm-applications-from-scratch" class="publication-link " target="_blank">Read More</a>
+            </div>
+        </div>
+        <!-- Add more publications similarly -->
+                                   
+            
                 <!-- Add more publications similarly -->
             </div>
 
             <h3>Blogs</h3>
             <div class="blogs">
 
+
+                <div class="blog">
+                    <a href="https://www.kdnuggets.com/step-by-step-guide-to-deploying-ml-models-with-docker" class="blog-title" target="_blank">Step-by-Step Guide to Deploying ML Models with Docker</a>
+                    <p class="blog-summary">Tired of fixing the same deployment issues? Learn how Docker can keep your ML models running smoothly, every time.</p>
+                </div>
+
+                <div class="blog">
+                    <a href="https://www.kdnuggets.com/integrating-llms-with-scikit-learn-using-scikit-llm" class="blog-title" target="_blank">Integrating LLMs with Scikit-Learn Using Scikit-LLM</a>
+                    <p class="blog-summary">Combining LLM reasoning for text-based models in Scikit-Learn.</p>
+                </div>
+
+                <div class="blog">
+                    <a href="https://www.kdnuggets.com/voicechat-with-your-llms-using-alwaysreddy" class="blog-title" target="_blank">VoiceChat with Your LLMs using AlwaysReddy</a>
+                    <p class="blog-summary">Ever wanted to control your AI with just your voice? AlwaysReddy makes it simple—discover how to set up and use this powerful tool now!</p>
+                </div>
+                <div class="blog">
+                    <a href="https://www.kdnuggets.com/building-command-line-apps-in-python-with-click" class="blog-title" target="_blank">Building Command Line Apps in Python with Click</a>
+                    <p class="blog-summary">Have you ever wondered how you can easily create command-line applications in Python? Gather yourself up because that is what I am going to cover today.</p>
+                </div>
+
+
+                <div class="blog">
+                    <a href="https://www.kdnuggets.com/how-to-create-a-custom-tokenizer-for-non-english-languages-with-hugging-face-transformers" class="blog-title" target="_blank">How to Create a Custom Tokenizer for Non-English Languages with Hugging Face Transformers</a>
+                    <p class="blog-summary">Learn to create tokenizers for specific languages using Hugging Face Transformers to improve model performance.</p>
+                </div>
+
+                <div class="blog">
+                    <a href="https://www.kdnuggets.com/how-to-translate-languages-with-marianmt-and-hugging-face-transformers" class="blog-title" target="_blank">How to Translate Languages with MarianMT and Hugging Face Transformers</a>
+                    <p class="blog-summary">Discover how to translate text quickly and accurately between languages with just a few simple steps using MarianMT.</p>
+                </div>
+
+                <div class="blog">
+                    <a href="https://www.kdnuggets.com/how-to-use-the-hugging-face-tokenizers-library-to-preprocess-text-data" class="blog-title" target="_blank">How to Use the Hugging Face Tokenizers Library to Preprocess Text Data</a>
+                    <p class="blog-summary">Text preprocessing is an important step in NLP. Let's learn how to use the Hugging Face Tokenizers Library to preprocess text data.</p>
+                </div>
+                <div class="blog">
+                    <a href="https://www.kdnuggets.com/an-overview-of-hugging-face-diffusers" class="blog-title" target="_blank">An Overview of Hugging Face Diffusers</a>
+                    <p class="blog-summary">Getting Started with HuggingFace Diffusers: A Beginner's Journey into the World of Generative Images.</p>
+                </div>
+
+                <div class="blog">
+                    <a href="https://www.kdnuggets.com/distribute-and-run-llms-with-llamafile-in-5-simple-steps" class="blog-title" target="_blank">Distribute and Run LLMs with llamafile in 5 Simple Steps</a>
+                    <p class="blog-summary">Do you want to know how to run LLMs on your computer without installing a lot of dependencies or writing code? Well, you're in luck! By the end of this tutorial, you will have successfully run an LLM using llamafile and interacted with it through a user-friendly interface.</p>
+                </div>
+                
                 <div class="blog">
                     <a href="https://www.kdnuggets.com/5-free-books-to-master-machine-learning" class="blog-title" target="_blank">5 Free Books to Master Machine Learning</a>
                     <p class="blog-summary">Machine Learning is one of the most exciting fields in computer science today. In this article, we will take a look at the five best yet free books to learn machine learning in 2023.</p>

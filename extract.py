@@ -2,7 +2,7 @@ import requests
 from bs4 import BeautifulSoup
 
 # URL of the author's KDnuggets page
-url = 'https://www.kdnuggets.com/author/kanwal-mehreen/page/3'
+url = 'https://www.kdnuggets.com/author/kanwal-mehreen'
 
 # Send a GET request to the URL
 response = requests.get(url)
